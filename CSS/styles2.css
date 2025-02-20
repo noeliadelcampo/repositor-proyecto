@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: auto;
+    background-image: url(../Assets/imagenes/fondo-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Nunito Sans", serif;
+
+}
+
+
+
+
+header {
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    background: #0f033287;
+    padding: 20px;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+header a {
+    color: #F5F5F5;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 1px;
+    letter-spacing: 1px;
+}
+main {
+    text-align: center;
+
+}
+
+h1 {
+    color: #F99417;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #F5F5F5;
+    margin: 15px 0;  
+    font-weight: 500; 
+}
+
+h3 {
+    font-size: 18px;
+    color: #F5F5F5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #F5F5F5;
+    font-size: 16px;
+    margin: 20px 60px;   
+    text-align: center;
+}
+
+
+/* ARCHIVO AVENTURA | grilla de fotos */
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px; 
+    place-items: center;
+    margin: 20px;
+}
+
+
+.cuadricula-interna {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F99417;
+    border-right: 1px solid #F99417;
+    margin-top: 20px;
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.cuadricula-interna img {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+    margin: 0; 
+}
+
+.text {
+    align-self: flex-start;
+    padding: 0 20px 0 140px;
+    margin-top: 20px;
+}
+
+
+/* ARCHIVO INDEX | main */
+
+
+.imagenes-inicio {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f033287;
+    border: 1px solid #4D4C7D;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+
+.texto-inicio {
+    text-align: center;
+    background: transparent;
+    width: 90%;
+    padding: 20px 50px;
+    margin: 10px 60px;
+}
+
+.imagenes-inicio .imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;    
+}
+
+
+/* ARCHIVO NOSOTROS | main */
+
+
+.nosotros {
+    width: 90%;
+}
+
+
+.imagenes-nosotros {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    justify-self: center;
+    background-color: #0f033287;
+    border: 1px solid #4D4C7D;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 10px 0;
+}
+
+
+.texto-nosotros {
+    text-align: center;
+    background: transparent;
+    width: 90%;
+    padding: 20px 50px;
+    margin: 10px 0px 10px 60px;
+}
+
+.texto-nosotros p {
+    text-align: center;
+}
+
+.imagenes-nosotros img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 0; 
+    border-radius: 8px;
+}
+
+/* HEADER PAGINA | menu */
+
+.menu {
+    background-color: #0f033287;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: #F5F5F5;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0 20px;
+    border-radius: 20px;
+    border-bottom: 1px solid #F99417;
+    border-right: 1px solid #F99417; 
+    transition: transform 0.2s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.menu:hover {
+    background-color: #F99417;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    color: #0f0332;
+
+}
+
+.link-header {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    border: none;
+    background-color: transparent; 
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    color: #F5F5F5;
+}
+
+.link-header:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);background-color: #F5F5F5;
+    border-color: #F5F5F5;
+}
+
+
+.link-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+    
+}
+
+
+
+/* ARCHIVO CONTACTO | grilla */
+
+
+.seccion-contacto {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 30px 20px;
+}
+
+
+.nuestras-redes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #0f033287;
+    border-bottom: 1px solid #F99417;
+    border-right: 1px solid #F99417;
+    border-radius: 8px;
+    padding: 30px 40px 30px 10px;
+    color: #F5F5F5;
+}
+
+.nuestras-redes h3 {
+    padding: 0 20px 0 60px;
+    color: #F99417;
+    text-transform: uppercase;
+}
+
+.nuestras-redes p {
+    padding: 0 20px 0 60px;
+}
+
+.contacto-mail {
+    width: 100%;
+    height: auto;
+    background-color: #0f033287;
+    border-bottom: 1px solid #F99417;
+    border-right: 1px solid #F99417;
+    border-radius: 8px;
+    padding: 30px;
+    color: #F5F5F5;
+}
+
+.contacto-mail h3 {
+    padding: 0 25px 0 25px;
+    color: #F99417;
+    text-transform: uppercase;
+}
+
+.contacto-mail p {
+    padding: 0 30px 0 20px;
+}
+
+.medios-contacto {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;    
+    width: 100%;
+    height: auto;
+    background-color: #0f033287;
+    border-radius: 8px;
+    padding: 30px 40px 30px 10px;
+    color: #F5F5F5;
+    border-bottom: 1px solid #F99417;
+    border-right: 1px solid #F99417;
+    
+}
+
+.medios-contacto h3 {
+    padding: 0 20px 0 60px;
+    color: #F99417;
+    text-transform: uppercase;
+}
+
+.medios-contacto p {
+    padding: 0 20px 0 60px;
+}
+
+.contactanos {
+    padding: 6px 10px;
+    width: 100%;
+    background: #0f033287;
+    
+    text-decoration: none;
+    color: #0f0332;
+}
+
+.formulario {
+    
+}
+.formulario-input {
+
+    padding: 10px 50px;
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+    color: #0f0332;
+    display: block;
+    text-align: center;
+    
+    font-family: "Nunito Sans", serif;
+}
+
+.redes {
+
+    width: 100%;
+    background: #F99417;
+    color: #0f0332;
+    margin: 10px 100px;
+}
+
+.formulario-submit {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #F99417;
+    width: 100%;
+    color: #0f0332;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.formulario-submit:hover {
+    background-color: #0f0332;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.formulario-cuadro {
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.boton-acceso {
+    margin: 15px ;
+    padding: 20px 0;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boton-acceso a {
+    text-decoration: none;
+    color: #0f0332;
+    letter-spacing: 1px;
+}
+
+.boton-acceso:hover {
+    background-color: #F99417;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+/* ARCHIVO TU-DESTINO | grilla */
+
+
+
+.experiencias {
+    
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin: 20px;
+    
+}
+
+.lista {
+    display: inline-block;
+    place-items: center;
+    width: 100%;
+    text-decoration: none;
+    height: 500px;
+    background-color: #0f033287;
+    border-bottom: 1px solid #F99417;
+    border-right: 1px solid #F99417;
+    border-radius: 8px;
+    padding: auto;
+    color: #F5F5F5;
+    margin: auto;
+}
+
+
+.experiencias-boton {
+    
+    width: 70%;
+    height: auto;
+    background: #F99417;
+    color: #212121;
+    display: block;
+}
+
+
+.boton-viaje {
+    margin: 20px 0;
+    padding: 10px 0 10px 0;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    color: #0d0d0d;
+    cursor: pointer;
+}
+
+.boton-viaje a {
+    text-decoration: none;
+    color: #0d0d0d;
+
+}
+
+.boton-acceso a {
+    text-decoration: none;
+}
+
+.boton-viaje:hover {
+    background-color: #F99417;
+    box-shadow: 0 0 10px rgba(231, 145, 41, 0.5);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: #0f033287;
+    border-bottom: 1px solid #F99417;
+    border-right: 1px solid #F99417;
+    border-radius: 8px;
+    color: #FFF8E1;
+    margin: auto; 
+    justify-content: center;
+}
+
+iframe {
+    width: 90%;
+    height: 90%;
+    border: none;
+}
+
+
+.experiencias-info {
+    display: flex;
+    background-color: #0f033287;
+    border-radius: 8px;
+    border-bottom: 1px solid #F99417;
+    border-right: 1px solid #F99417;
+    margin: 0 20px;
+    height: 100px;
+    color: #FAFAFA;
+
+
+}
+.experiencias-info p {
+    margin: auto;
+}
+
+/* FOOTER PAGINA  */
+
+
+.footer-contacto {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: transparent;
+    gap: 50px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.mensaje {
+
+    cursor: pointer;   
+    border-bottom: 1px solid #F99417;
+    border-right: 1px solid #F99417;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.mensaje p {
+    margin: auto;
+}
+
+
+.mensaje:hover {
+    
+    background-color: #0f0332;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #F5F5F5;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+.footer-logotipo {
+    
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+
+
+.footer-logotipo a {
+    text-decoration: none;
+    color: #F5F5F5;
+    
+}
+
+
+.mensaje-usuario {
+    align-items: center;
+    padding: 30px 20px 0 0;
+    letter-spacing: 2px;
+}    
+
+.copyright {
+    width: 70px;
+    height: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+.footer-contacto {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: transparent;
+    gap: 10px;
+    width: 100%;
+    height: 90px;
+    place-items: center;
+}
+
+.mensaje {
+
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+
+.footer-logotipo button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.icono-red {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.footer-logotipo a {
+    color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.mensaje-usuario {
+    align-items: center;
+    padding: 30px 20px 0 0;
+    letter-spacing: 2px;
+}    
+
+
+a {
+    text-decoration: none;
+}

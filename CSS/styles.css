@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Assets/imagenes/fondo-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    font-family: "Nunito Sans", serif;
+
+}
+
+
+main {
+    text-align: center;
+    margin-top: 90px;
+
+}
+
+h1 {
+    color: #F99417;
+    margin-top: 20px;
+    margin-bottom: 23px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #F5F5F5;
+    margin: 15px 0;  
+    font-weight: 500; 
+}
+
+h3 {
+    font-size: 18px;
+    color: #F5F5F5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #F5F5F5;
+    font-size: 16px;
+    margin: 20px 60px;   
+    text-align: center;
+}
+
+.borde-destacado {
+    border-bottom: 1px solid #F99417;
+    border-right: 1px solid #F99417;
+    border-radius: 8px;
+    background-color: #0f0332d6;
+}
+
+.boton-hover:hover {
+    background-color: #F99417;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+/* NAV */
+
+.navbar {
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.offcanvas {
+    align-items: center;
+    
+}
+
+.nav-item {
+    margin: auto 30px;
+    border: 1px solid #F99417;
+    background-color: #0f0332;
+    border-radius: 8px;
+    
+    
+    
+}
+
+.nav-link {
+    color: #F5F5F5;
+}
+
+.nav-hover:hover {
+    background-color: #F99417;
+    border: 1px solid #F99417;
+    border-radius: 8px;
+    box-shadow: #0d0d0d;
+
+}
+
+.navbar-brand.izquierda {
+    margin-left: 2em;
+    filter: invert(1);
+}
+
+.navbar-brand.derecha {
+    margin-right: 2em;
+    filter: invert(1);
+}
+
+
+/* ARCHIVO AVENTURA | grilla de fotos */
+
+.aventura {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    margin: 80px auto;
+    justify-items: center;
+}
+
+.aventura-titulo{
+    grid-column: 1 / -1;
+    text-align: center;
+    width: 90%;
+}
+
+.aventura-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 90%;
+}
+
+
+.carrusel-container {
+    position: relative;
+    margin: 20px;
+    height: 65vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}
+
+.carrusel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #F99417;
+    border-right: 2px solid #F99417;
+}
+
+.carrusel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.carrusel img.active {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;   
+}
+
+
+
+
+
+.text {
+    align-self: flex-start;
+    padding: 0 20px 0 140px;
+    margin-top: 20px;
+}
+
+
+
+.aventura-texto img {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background: transparent;
+    border: none;
+    width: auto;
+    height: 60px;
+}
+
+
+
+
+
+
+/* ARCHIVO INDEX + NOSOTROS | MAIN */
+
+
+.caja-imagen {
+    position: relative;
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    
+    border: 1px solid #4D4C7D;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15PX auto; 
+    overflow: hidden;
+}
+
+
+.texto {
+    text-align: center;
+    background: transparent;
+    width: 90%;
+    
+    margin: 10px auto;
+}
+
+.caja-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;    
+}
+
+.marca-agua {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent;
+    border: none;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+}
+
+
+
+
+
+
+/* ARCHIVO CONTACTO | grilla */
+
+
+.seccion-contacto {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    align-items: stretch;
+    height: 72vh;
+    margin: 100px 30px 0 30px;
+}
+
+.seccion-contacto h3 {
+    color: #F99417;
+    text-transform: uppercase;
+    
+}
+
+
+.contacto-celu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #F5F5F5;
+    align-items: center;
+}
+
+.contactanos {
+    width: 90%;
+    background: #0f033287;
+    color: #0f0332;
+    border: none;
+}
+
+
+.boton-acceso {
+    margin: 15px ;
+    padding: 20px 0;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boton-acceso a {
+    color: #0f0332;
+    letter-spacing: 1px;
+}
+
+
+.contacto-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+    color: #F5F5F5;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: auto;
+    width: 90%;
+}
+
+
+.formulario-input {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+    color: #0f0332;
+    padding: 2px 0;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+}
+
+.formulario-input
+
+textarea {
+    min-width: 100%;
+    resize: none;
+    border: none;
+    font-family: "Nunito Sans", serif;
+    background-color: transparent;
+    text-align: center;
+
+}
+
+.input-contacto {
+    width: 100%;
+    padding: 6px 8px;
+    border: none;
+    background-color: transparent;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+.boton-submit {
+    background-color: transparent;
+    border: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 6px 0;
+    
+}
+
+
+
+
+/* ARCHIVO TU-DESTINO | grilla */
+
+
+
+.experiencias {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+
+.lista {
+    position: relative;
+    place-items: center;
+    width: 100%;
+    color: #F5F5F5;
+}
+
+.etiqueta-top {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    width: 50px;
+    height: auto;
+    
+}
+
+
+
+.experiencias-boton {
+    
+    width: 70%;
+    height: auto;
+    background: #F99417;
+    color: #212121;
+    display: block;
+}
+
+
+.boton-viaje {
+    margin: 20px 0;
+    padding: 10px 0 10px 0;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    
+    cursor: pointer;
+}
+
+.boton-viaje a {
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+
+
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #FFF8E1;
+    justify-content: center;
+}
+
+iframe {
+    width: 90%;
+    height: 90%;
+    border: none;
+}
+
+
+.experiencias-info {
+    display: flex;
+    margin: 40px;
+    height: auto;
+    color: #FAFAFA;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.experiencias-info h3 {
+    color: #F99417;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.experiencias-info p {
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* FOOTER PAGINA  */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    color: #F5F5F5;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px auto;
+}
+
+
+.footer-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 900px;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+
+.footer-enlace {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #F5F5F5;
+    letter-spacing: 2px;
+    
+}
+
+.footer-icono {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+    filter: invert(1);
+    
+}
+
+
+
+
+.copyright {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #F5F5F5;
+    letter-spacing: 2px;
+}
+
+
+/* LOGING WEB*/
+
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 140px;
+
+}
+
+.login-container {
+    background-color: #0f0332; 
+    padding: 40px;
+    border: 1px solid #F99417;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #F5F5F5;
+    text-align: center;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 20px;
+    background-color: #7a748b;
+    color: #F99417;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #F99417;
+    color: #0f0332;
+}
+
+.link-usuario {
+    margin-top: 15px;
+}
+
+.link-usuario a {
+    color: #F99417;
+    text-decoration: none;
+}
+
+.link-usuario a:hover {
+    text-decoration: underline;
+}
